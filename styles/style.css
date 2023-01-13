@@ -149,3 +149,75 @@ hr{
     background: #FFE4E8;
     border-radius: 5px;
     }
+
+/* Media queries */
+
+/* Mobile devices */
+@media screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    .blog-title{
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+    .blog-info{
+        margin-left: 0;
+    }
+    .blog-author{
+        margin-top: 0;
+    }
+    .course{
+        margin-bottom: 40px;
+    }
+    .course-author{
+        margin-bottom: 5px;
+    }
+    .courses{
+        /* display: none; */
+    }
+}
+
+    /* Tablet devices */
+@media screen and (min-width:689px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .section-title, .blogs, .courses{
+        margin-left: 20px;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    .blog-title{
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+    .blog-info{
+        margin-left: 0;
+    }
+    .blog-author{
+        margin-top: 0;
+    }
+    .course{
+        margin-bottom: 40px;
+    }
+    .course-author{
+        margin-bottom: 5px;
+    }
+    .courses{
+        /* display: none; */
+    }
+}
+
